@@ -1,0 +1,43 @@
+:root{
+
+	font-size: 16px;
+}
+
+
+
+body { 
+	background: url("../images/bg2.jpg");
+ background-repeat: repeat;
+
+  }
+
+
+
+#title{
+font-size: 2.5rem;
+	color:white;
+	font-weight: 600;
+ text-shadow: 2px 2px 20px grey;
+	padding:10px 0px 0px 10px;
+
+}
+
+#search , #reset{
+
+	background-color:   #4CAF50;
+	border:none;
+	color:white	;
+	outline: none;
+}
+#search:hover , #reset:hover{
+
+	cursor: pointer;
+}
+
+
+  @media only screen and (max-width:560px ){
+
+  	:root{
+  		font-size: 14px;
+  	}
+  }
