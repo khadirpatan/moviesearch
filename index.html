@@ -25,13 +25,13 @@
 	<hr color=white>
 	
 
-<div class="container-fluid">
-<div class="row">
+<div class="container-fluid" >
+<div class="row" id="row1">
 
-<div class="col-md-3 col-sm-5 col-7 " style="padding-bottom:10px">
+<div class="col-md-3 col-sm-5 col-12 " style="padding-bottom:10px">
 
 <div class="dropdown" style="width:100%">
-  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width:100%">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width:100%;border:none ; background-color:#668cff">
     Seach Movie by
   </button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="width:100%">
@@ -46,19 +46,23 @@
 
 <div class=col-md-9>
 <div class="row justify-content-around"  >
-                  <input class="form-control col-md-4 col-sm-5 col-8" id="inputName" style="margin-bottom: 2px;" type="text" placeholder="Title..">
-                  <input class="form-control col-md-2 col-sm-2 col-3" id="inputYear" style="margin-bottom: 2px;" type="text" placeholder="Year..">
-                  <button class="form-control col-md-2 col-sm-2 col-5" id="search" style="margin-bottom: 3vh;" type="submit" class="btn btn-primary">Search</button>
-                  <button class="form-control col-md-2 col-sm-2 col-5" id="reset" style="margin-bottom: 3vh;" type="submit" class="btn btn-primary">Reset</button>
+                  <input class="form-control col-md-4 col-sm-5 col-12" id="inputName" style="margin-bottom: 2px;" type="text" placeholder="Title..">
+                  <input class="form-control col-md-2 col-sm-2 col-12" id="inputYear" style="margin-bottom: 2px;" type="text" placeholder="Year..">
+                  <button class="form-control col-md-2 col-sm-2 col-12" id="search" style="margin-bottom: 2px;" type="submit" class="btn">Search</button>
+                  <button class="form-control col-md-2 col-sm-2 col-12" id="reset" style="margin-bottom: 2px  ;" type="submit" class="btn">Reset</button>
                </div>
 
 </div>
 </div>
+
+</div>
+
+<div class="container-fluid">
+
+<div class=row id="output"></div>
 </div>
 
 
-
-<div id="output"></div>
 
 
 
