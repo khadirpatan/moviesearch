@@ -58,7 +58,7 @@ if( placeholder == 'Title..'){
 			type : 'GET',
 			datatype : 'json',
 			async:true,
-			url :' http://www.omdbapi.com/?apikey=133949cb&s='+ $("#inputName").val() ,
+			url :' https://www.omdbapi.com/?apikey=133949cb&s='+ $("#inputName").val() ,
 
 			success : (data) =>{
 
@@ -208,7 +208,7 @@ if( placeholder == 'Title..'){
 			type : 'GET',
 			datatype : 'json',
 			async:true,
-			url :' http://www.omdbapi.com/?apikey=133949cb&i='+ $("#inputName").val() ,
+			url :' https://www.omdbapi.com/?apikey=133949cb&i='+ $("#inputName").val() ,
 
 			success : (data) =>{
 				if (data.Response=="False"){
