@@ -33,6 +33,7 @@ $("#titleLink").click(function(){
 	if($('#inputYear').is(':hidden')) {
     	$("#inputYear").show();
     	$("#inputName").val("");
+    	$("#inputYear").val("");
 
 			}
  	$("#inputName").attr('placeholder', 'Title..');
@@ -83,9 +84,7 @@ if( placeholder == 'Title..'){
 								let output= `
 
 
-										<div class="container-fluid" >
-
-											<div class="row ">
+									
 												<div class="col-sm-5 col-md-3 col-lg-3 col-12">
 
 												<div class="card" >
@@ -103,8 +102,7 @@ if( placeholder == 'Title..'){
 							   					 </p>
 							   					 
 							     
-							    		</div>
-							  			</div>
+							    		
 										</div>
 
 							  						</div>
@@ -122,7 +120,7 @@ if( placeholder == 'Title..'){
 					}
 
 					if(isFound==false){
-						let output=`<h5 style="color:white"><center>Please check the Parameters Entered</center></h5>`
+						let output=`<div style="text-align:center"><h5 style="color:white">Please check the Entered Parameters</h5></div>	`
 						$('#output').append(output);
 					}
 
@@ -134,14 +132,13 @@ if( placeholder == 'Title..'){
 				for(currentMoive in movieArray){
 
 								let data=movieArray[currentMoive];
-								console.log(data);
-								console.log(data.Poster);
+								
 								 
 								let output= `
 
 
 										
-												<div class="col-sm-5 col-md-3 col-lg-3 col-12" style="margin-bottom:10px">
+												<div class="col-sm-5 col-md-3 col-lg-3 col-12" style="margin:20px 0px 20px 0px">
 
 												<div class="card" >
 
