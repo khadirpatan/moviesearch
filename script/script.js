@@ -59,12 +59,12 @@ $("#titleLink").click(function(){
 let getcard =(data)=>{
 
 const poster= data.Poster == "N/A" ? "images/poster.jpg" : data.Poster;
-let output= `
-				<div class="col-sm-6 col-md-5 col-lg-3 col-8">
+let output= ` 
+				<div class="col-sm-6 col-md-4 col-lg-3 col-10 posterCard">
 												
 				<div class="card" style="margin-bottom:10px"  >
-				<img class="card-img-top img-fluid" id="outputImg2" style="height:300px"  src="${poster}" alt="Card image cap">
-			<div class="card-body text-center"  style="font-size:0.9rem">
+				<img class="card-img-top img-fluid" id="outputImg2" style=""  src="${poster}" alt="Card image cap">
+			<div class="card-body text-center"  style="">
 			<p class="card-text">
 
 			 ${data.Title}<hr>
@@ -131,7 +131,7 @@ if( placeholder == 'Title..'){
 												}
 
 					if(isFound==false){
-						let output=`<div class=msg >Please check the Entered Parameters></div>	`
+						let output=`<div class=msg >Please check the Entered Parameters</div>	`
 						$('.output').append(output);
 					}
 
@@ -191,11 +191,11 @@ if( placeholder == 'Title..'){
 				let output= `
 
 
-					<div class="col-sm-6 col-md-6 col-lg-4 col-8">
+					<div class="col-sm-6 col-md-6 col-lg-4 col-10 posterCard">
 
 					<div class="card" >
 
-						<img class="card-img-top img-fluid" id="outputImg" style="height:300px"  src="${poster}" alt="Card image cap">
+						<img class="card-img-top img-fluid" id="outputImg" style=""  src="${poster}" alt="Card image cap">
 					<div class="card-body text-center">
 
 					 <p class="card-text">

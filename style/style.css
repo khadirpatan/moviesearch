@@ -6,7 +6,7 @@
 
 
 body { 
-	background: url("../images/bg2.jpg");
+	background: url("../images/bg.png");
  background-repeat: repeat;
 
   }
@@ -54,9 +54,14 @@ padding:10px;
 .output{ 
 padding:20px 0px 20px 0px;
 	 
-
-
 }
+#outputImg2{
+height: 300px;
+}
+#outputImg{
+height: 300px;
+}
+
 .msg{
 	margin:auto; 
 	color:white; 
@@ -67,16 +72,11 @@ padding:20px 0px 20px 0px;
 
  @media only screen and (max-width:768px ) and (min-width: 577px){
 
-  	:root{
-  		font-size: 18px;
-  	}
 
   	#drpdwn{
 	padding:0px 0px 0px 18px; 
 	
 		}
-
-
 
   }
 
@@ -87,6 +87,19 @@ padding:20px 0px 20px 0px;
   	:root{
   		font-size: 16px;
   	}
+
+.output{
+	
+	 justify-content: space-around;
+	 font-size: 1.1rem;
+		}
+
+#outputImg2{
+height: 400px;
+}
+#outputImg{
+height: 400px;
+}
 
 
   		#drpdwn{
