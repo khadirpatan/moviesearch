@@ -60,29 +60,26 @@ let getcard =(data)=>{
 
 const poster= data.Poster == "N/A" ? "images/poster.jpg" : data.Poster;
 let output= ` 
-				<div class="col-sm-6 col-md-4 col-lg-3 col-10 posterCard">
+			
+	<div class="col-sm-6 col-md-4 col-lg-3 col-10 posterCard">
 												
-				<div class="card" style="margin-bottom:10px"  >
-				<img class="card-img-top img-fluid" id="outputImg2" style=""  src="${poster}" alt="Card image cap">
-			<div class="card-body text-center"  style="">
-			<p class="card-text">
+	<div class="card" style="margin-bottom:10px"  >
+		<img class="card-img-top img-fluid" id="outputImg2" style=""  src="${poster}" alt="Card image cap">
+		<div class="card-body text-center"  style="">
+		<p class="card-text">
 
-			 ${data.Title}<hr>
-			Year : ${data.Year}<br>
-			 Type : ${data.Type}<br>
-								
-			 <b>ImdbID: ${data.imdbID}<br></b>
+		 ${data.Title}<hr>
+		Year : ${data.Year}<br>
+		 Type : ${data.Type}<br>						
+		 <b>ImdbID: ${data.imdbID}<br></b>
 												
-			</p>    	
-			</div>
-			</div>
-
-													</div>`;
-											
-								 $('.output').append(output);
-								 return(output);
-
-
+		</p>    	
+		</div>
+	</div>
+	</div>`;
+									
+	 $('.output').append(output);
+	return(output);
 }
 
 
@@ -137,7 +134,6 @@ if( placeholder == 'Title..'){
 
 				}
 
-
 			if(!$("#inputYear").val()){
 
 				for(currentMoive in movieArray){
@@ -145,19 +141,17 @@ if( placeholder == 'Title..'){
 								let data=movieArray[currentMoive];
 			
 								getcard(data);
-
 							}
-
 					}
 
-
-			}
+				}
 
 			},
+			
 			error : (errorMsg)=>{
 
 				let output=`<div class=msg >We cant process your request right now</div>`
-					$('.output').append(output);
+				$('.output').append(output);
 
 			},
 
