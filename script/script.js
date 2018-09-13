@@ -219,7 +219,7 @@ if( placeholder == 'Title..'){
 						  <div class="modal-body">
 		
 
-						<img class="card-img-top img-fluid" id="modalOutputImg" style="height:200px; width:200px"  src="${data.Poster}" alt="Card image cap">
+						<img class="card-img-top img-fluid" id="modalOutputImg" style="height:200px; width:200px"  src="${poster}" alt="Card image cap">
 					<div class="card-body" style="text-align:left">
 
 					<table class="table">
